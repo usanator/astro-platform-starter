@@ -21,7 +21,7 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
       window.addEventListener('load', function () {
         document.getElementById('read-the-docs').addEventListener('click', function (e) {
           e.preventDefault();
-          qualified('startCall', { maximized: true });
+          qualified('startCall', { state: 'minimized' }
         });
       });
     </script>
