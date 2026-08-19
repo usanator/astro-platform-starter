@@ -14,13 +14,12 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
     <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
     <Markdown content={explainer} class="mb-10 text-lg" />
     <p>
-        <a id="read-the-docs" href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
+        <button type="button" id="read-the-docs" class="btn btn-lg sm:min-w-64">Read the Docs</button>
     </p>
     
     <script>
       window.addEventListener('load', function () {
-        document.getElementById('read-the-docs').addEventListener('click', function (e) {
-          e.preventDefault();
+        document.getElementById('read-the-docs').addEventListener('click', function () {
           qualified('startCall', { state: 'minimized' });
         });
       });
