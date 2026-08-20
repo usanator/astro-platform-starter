@@ -23,7 +23,7 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
     <script>
       window.addEventListener('load', function () {
         document.getElementById('Have-a-live-conversation-now').addEventListener('click', function () {
-            qualified('startCall', { state: 'maximized' });
+            qualified('startCall', { state: 'minimized' });
         });
         document.getElementById('End-call').addEventListener('click', function () {
             qualified('teardown');
